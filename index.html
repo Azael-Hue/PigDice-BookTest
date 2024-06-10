@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pig Dice</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="ts/main.ts" defer></script>
 </head>
 <body>
-    
+    <main>
+        <h1>Lets Play PIG DICE!</h1>
+        <fieldset>
+            <legend>Rules</legend>
+            <ul>
+                <li> First player to <span id="winning total"></span> wins. </li>
+                <li> Player takes turns rolling the die</li>
+                <li> Turns end when player rolls a 1 or choose to hold</li>
+                <li> if player rolls a 1, they lose all points earned during the turn</li>
+                <li> if player holds, points earned during the turn are added to their total.</li>
+            </ul>
+        </fieldset>
+
+        <label for="player1">Player 1</label>
+        <input type="text" id="player1" >
+        <label for="score1">Score</label>
+        <input type="text" id="score1" value="0" disabled><br>
+
+        <label for="player2">Player 2</label>
+        <input type="text" id="player2" >
+        <label for="score2">Score</label>
+        <input type="text" id="score2" value="0" disabled>
+
+        <input type="button" id="new_game" value="New Game"><br>
+
+        <section id="turn" class="hide">
+            <div><span id="current"></span>'s turn</div>
+
+            <input type="button" id="roll" value="Roll">
+            <input type="button" id="hold" value="Hold">
+
+            <label for="die">Die</label>
+            <input type="text" id="die" disabled>
+
+            <label for="total">Total</label>
+            <input type="text" id="total" disabled>
+        </section>
+    </main>
 </body>
 </html>
