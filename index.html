@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pig Dice</title>
 
     <link rel="stylesheet" href="css/main.css">
-    <script src="ts/main.ts" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <main>
         <h1>Lets Play PIG DICE!</h1>
@@ -23,12 +28,12 @@
         </fieldset>
 
         <label for="player1">Player 1</label>
-        <input type="text" id="player1" >
+        <input type="text" id="player1">
         <label for="score1">Score</label>
         <input type="text" id="score1" value="0" disabled><br>
 
         <label for="player2">Player 2</label>
-        <input type="text" id="player2" >
+        <input type="text" id="player2">
         <label for="score2">Score</label>
         <input type="text" id="score2" value="0" disabled>
 
@@ -39,7 +44,7 @@
 
             <input type="button" id="roll" value="Roll">
             <input type="button" id="hold" value="Hold">
-            
+
             <label for="die">Die</label>
             <input type="text" id="die" disabled>
 
@@ -48,4 +53,5 @@
         </section>
     </main>
 </body>
+
 </html>
